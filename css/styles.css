@@ -1,0 +1,15 @@
+body{
+    background-color:cornsilk;
+}
+
+header{
+    background-color: aqua;
+}
+table,td,th{
+        border: 1px solid black
+
+    }
+table{
+    width: 75%;
+    border-collapse: collapse;
+    }

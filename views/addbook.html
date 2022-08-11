@@ -1,0 +1,26 @@
+<html>
+<head>
+        <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Add new Book</h1></br>
+        <h2>
+            <a href="/addDoctor">Add new doctor</a>
+            <a href="/addPatient">Add new patient</a>
+            <a href="/getDoctors">List doctors</a>
+            <a href="/getPatients">List patients</a>
+            <a href="/updateDoctor">Update doctor</a>
+        </h2>
+    </header>
+
+    <form action="/addnewbook" method="POST">
+        Title <input type="text"  name="title" required> </br>
+        Author <input type="text"  name="author" /> </br>
+        Topic <input type="text"  name="topic" required> </br>
+        Date of publication <input type="date"  name="dateOfpublication" /> </br>
+        Description <textarea rows=="5" cols="30" name="description"></textarea> </br>
+        <input type="submit" value="Submit" /> </br>
+    </form>
+</body>
+</html>

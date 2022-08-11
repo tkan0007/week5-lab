@@ -1,0 +1,31 @@
+<html>
+<head>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Delete book record</h1></br>
+        <h2>
+            <a href="/addbook">Add new book</a>
+            <a href="/getbooks">List Books</a>
+            <a href="/updatebook">Update Book Record</a>
+            <a href="/deletebook">Delete Book</a>
+        </h2>
+    </header>
+    <p>
+        The records are searched by Topic, then all matched record/s will be deleted.
+    </p>
+    <form action="/deletebookRecord" method="POST">
+        Topic <input type="text"  name="topic" required> </br>
+        <input type="submit" value="Submit" /> </br>
+    </form>
+    <p>
+        Delete the record by date.
+    </p>
+    <form action="/deletebookRecordByDate" method="POST">
+        Topic <input type="date"  name="dateOfpublication" required> </br>
+        <input type="submit" value="Submit" /> </br>
+    </form>
+
+</body>
+</html>

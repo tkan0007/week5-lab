@@ -1,0 +1,32 @@
+<html>
+        <head>
+                <link rel="stylesheet" href="styles.css">
+        </head>
+<body>
+    <header>
+        <h1>Update Book Record</h1></br>
+        <h2>
+            <a href="/addbook">Add new book</a>
+            <a href="/getbooks">List Books</a>
+            <a href="/updatebook">Update Book Record</a>
+            <a href="/deletebook">Delete Book</a>
+        </h2>
+    </header>
+    <br>
+        Record will be searched by title, then it will be updated with new changes.</br>
+        If there are several matched records, the oldest record will be updated.
+    </p>
+    <form action="/updatebookdata" method="POST">
+        <h3>Current record title here</h3>
+        Old title <input type="text"  name="titleold" required> </br>
+
+        <h3>New changes here</h3>
+        New title <input type="text"  name="titlenew" /> </br>
+        New author <input type="text"  name="authornew" /> </br>
+        New topic <input type="text"  name="topicnew" /> </br>
+        New date of publication <input type="date" name="dateOfpublicationnew" /> </br>
+        New description <textarea rows=="5" cols="30" name="descriptionnew"></textarea> </br>
+        <input type="submit" value="Submit" /> </br>
+    </form>
+</body>
+</html>
